@@ -28,7 +28,7 @@ const thoughtSchema = new Schema(
 );
 
 // Create a virtual property `reaction` that gets the amount of reactions per thought
-videoSchema
+thoughtSchema
     .virtual('reactionCount')
     // Getter
     .get(function () {
