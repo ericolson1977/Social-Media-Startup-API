@@ -18,7 +18,11 @@ To install the necessary dependencies, run the following command:
     npm i
 
 ## Usage
-n/a
+
+https://github.com/ericolson1977/Social-Network-Startup-API
+
+https://drive.google.com/file/d/1Zwtr7JyKwnrkZkNlq7XrF34pMMNUDq1w/view
+
 
 ## Credits
 
