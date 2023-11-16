@@ -1,6 +1,0 @@
-
-
-
-Seed 
-readme
-walkthrough
