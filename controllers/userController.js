@@ -32,7 +32,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-
+    // udate an existing user
     async updateUser(req, res) {
         try {
             const user = await User.findOneAndUpdate(
@@ -50,7 +50,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-
+    // delete a user
     async deleteUser(req, res) {
         try {
             const { userId } = req.params;
@@ -70,7 +70,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-
+    // create a new friend
     async createFriend(req, res) {
         try {
             const { userId, friendId } = req.params;
@@ -92,7 +92,6 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-
     // Delete a friend relationship between two users
     async deleteFriend(req, res) {
         try {

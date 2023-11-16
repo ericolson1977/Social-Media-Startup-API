@@ -44,6 +44,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
+    // update an existing thought
     async updateThought(req, res) {
         try {
             const thought = await Thought.findOneAndUpdate(
@@ -62,6 +63,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
+    // delete a thought
     async deleteThought(req, res) {
         try {
             const thought = await Thought.findOneAndRemove({ _id: req.params.thoughtId });

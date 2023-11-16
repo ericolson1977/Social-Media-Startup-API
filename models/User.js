@@ -35,12 +35,14 @@ const userSchema = new Schema(
   }
 );
 
+// Create a virtual property `friend` that gets the amount of friends per user
 userSchema
   .virtual('friendCount')
   .get(function () {
     return this.friends.length;
   });
 
+// Initialize User model
 const User = model('user', userSchema);
 
 module.exports = User;
